@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioGroup;
@@ -11,7 +13,9 @@ import android.widget.Spinner;
 
 
 public class FormularActivity extends AppCompatActivity {
+    public static final String BETRAG_KEY = "betrag";
     public static final String BETRAG_ART = "art";
+    public static final String MWST_PROZENT = "mwst";
 
 
     @Override
@@ -22,11 +26,16 @@ public class FormularActivity extends AppCompatActivity {
     }
 
 
-
     public void onClickBerechnen(View Button) {
         final EditText txtBetrag = (EditText) findViewById(R.id.edt_betrag);
+
         final String tmpBetrag = txtBetrag.getText().toString();
-        Log.v("FormularActivity", "Betrag: " + tmpBetrag);
+        float betrag = 0.0f;
+        if(tmpBetrag.length() >0) {
+            betrag = Float.parseFloat(tmpBetrag);
+        }
+
+        Log.v("FormularActivity", "Betrag: " + betrag);
 
 
         boolean isNetto = true;
@@ -53,12 +62,29 @@ public class FormularActivity extends AppCompatActivity {
 
         final Intent intent = new Intent(this, ErgebnisActivity.class);
 
-        intent.putExtra("BETRAG_KEY", tmpBetrag);
+        intent.putExtra(BETRAG_KEY, betrag);
         intent.putExtra(BETRAG_ART, isNetto);
-        intent.putExtra("UST_PROZENT", prozentwert);
+        intent.putExtra(MWST_PROZENT, prozentwert);
 
         startActivity(intent);
 
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()){
+            case R.id.opt_beenden:
+                finish();
+                break;
+            default:
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
