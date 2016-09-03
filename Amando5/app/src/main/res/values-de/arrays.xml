@@ -1,0 +1,16 @@
+<resources>
+  <string-array name="sortierung">
+      <item>Standard</item>
+      <item>Name</item>
+  </string-array>
+  
+  <string-array name="serverort">
+      <item>Lokal</item>
+      <item>Extern</item>        
+  </string-array>
+
+  <string-array name="serverort_werte">
+      <item>Lokal</item>
+      <item>Extern</item>        
+  </string-array>
+</resources>

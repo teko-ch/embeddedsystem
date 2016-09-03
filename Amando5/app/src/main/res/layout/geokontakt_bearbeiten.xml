@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <TextView
+            android:id="@+id/tx_name_label"
+            android:text="@string/txt_geokontakt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+    <EditText
+            android:id="@+id/tx_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:layout_below="@id/tx_name_label" />
+
+    <TextView
+            android:id="@+id/tx_telefon_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_geokontakt_telefonnummer"
+            android:layout_below="@id/tx_name_edit" />
+    <EditText
+            android:id="@+id/tx_telefon_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:layout_below="@id/tx_telefon_label" />
+
+    <TextView
+            android:id="@+id/tx_letzte_position_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_geokontakt_letzte_position"
+            android:layout_below="@id/tx_telefon_edit" />
+    <TextView
+            android:id="@+id/tx_letzte_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tx_letzte_position_label" />
+
+    <TextView
+            android:id="@+id/tx_stichwort_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_geokontakt_stichwort"
+            android:layout_below="@id/tx_letzte_position" />
+    <TextView
+            android:id="@+id/tx_stichwort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tx_stichwort_label" />
+
+    <TextView
+            android:id="@+id/tx_datum_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_geokontakt_datum"
+            android:layout_below="@id/tx_stichwort" />
+    <TextView
+            android:id="@+id/tx_datum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tx_datum_label" />
+
+</RelativeLayout>

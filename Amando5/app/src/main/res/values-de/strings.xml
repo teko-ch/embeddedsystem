@@ -1,0 +1,83 @@
+<resources>
+
+  <string name="app_name">Amando</string>
+
+  <!-- Schaltflaechentexte -->
+  <string name="sf_position_senden">Position senden</string>
+  <string name="sf_position_senden_beenden">Senden beenden</string>
+  <string name="sf_geokontakte_verwalten">Geokontakte verwalten</string>
+  <string name="sf_karte_anzeigen">Karte anzeigen</string>
+  <string name="sf_simulation">Simulation starten</string>
+  <string name="sf_ok">OK</string>
+  
+  <!-- Startseite -->
+  <string name="txt_startseiteanzeigen_intro">Sie haben folgende Optionen zur Verfügung:</string>
+  <string name="startseite_titel">Amando-Startseite</string>
+  
+  <!-- Karte anzeigen -->
+  <string name="txt_karte_anzeigen_titel">Karte der Geokontakte</string>
+  <string name="txt_karte_anzeigen_intro">Positionen werden angezeigt</string>
+  <string name="msg_position_ich">Hier bin ich!</string>
+  <string name="msg_position_freund">Freund ist hier!</string>
+
+  <!-- Geokontaktliste -->
+  <string name="txt_geokontakt_auflisten_titel">Geokontakte</string>
+  <string name="txt_geokontakt_auflisten_kontaktauswahl">Kontakt auswählen</string>  
+  <string name="txt_geokontakt_auflisten_keineDaten">Noch keine Geokontakte vorhanden</string>
+
+  <!-- Geokontakte Details -->
+  <string name="txt_geokontakt_anzeigen_titel">Geokontakt</string>
+  <string name="txt_geokontakt_anzeigen_intro">Details des Geokontakts</string>
+  
+  <!-- Geokontakte bearbeiten -->
+  <string name="txt_geokontakt_bearbeiten_titel">Geokontakt</string>
+  <string name="txt_geokontakt_bearbeiten_intro">Pflegen Sie den Geokontakt</string>
+  
+  <!-- Geokontakt allgemein -->
+  <string name="txt_geokontakt_name">Name:</string>
+  <string name="txt_geokontakt_telefonnummer">Telefonnummer:</string>
+  <string name="txt_geokontakt_letzte_position">Letzte Position:</string>
+  <string name="txt_geokontakt_stichwort">Stichwort:</string>
+  <string name="txt_geokontakt_datum">Datum:</string>
+  
+  <!-- Position senden -->
+  <string name="txt_position_senden_titel">Position Senden</string>  
+  <string name="txt_position_senden_intro">Senden Sie ihre Position an einen Geokontakt</string>
+  <string name="txt_position_aktualisieren">Eigene Position aktualisieren</string>
+  <string name="dialog_titel_warnung_geoposition">Warnung: Keine Geoposition verfügbar</string>
+  <string name="dialog_text_netzwerk_provider">Es konnte keine Geoposition ermittelt werden. Bitte aktivieren Sie \"Zugriff auf meinen Standort". Verwenden Sie \"GPS-Satelitten\" nicht in geschlossenen Räumen.</string>
+
+  <!-- Einstellungen bearbeiten -->
+  <string name="txt_einstell_cat_title_allg">Allgemein</string>
+  <string name="txt_einstell_nickname">Nickname</string>
+  <string name="txt_einstell_cat_title_server">Server</string>
+  <string name="txt_einstell_serverort">Ort des Servers</string>
+  <string name="txt_einstell_serverort_text">\'Lokal\': lokale Installation\n\'Extern\': Demo-Server</string>
+  <string name="txt_einstell_serverort_default">Extern</string>
+  <string name="txt_einstell_cat_title_position">Position</string>
+  <string name="txt_einstell_gps_min_zeit">Positionsermittlung (Zeit)</string>
+  <string name="txt_einstell_gps_min_dist">Positionsermittlung (Distanz)</string>
+  
+  <!-- anwendungsweite Menueoptionen -->
+  <string name="men_startseite_anzeigen">Startseite</string>
+  <string name="men_geokontakt_anlegen">Neu</string>
+  <string name="men_geokontakt_details">Details</string>
+  <string name="men_geokontakt_bearbeiten">Bearbeiten</string>
+  <string name="men_geokontakt_importieren">Import</string>
+  <string name="men_geokontakt_loeschen">Löschen</string>
+  <string name="men_geokontakt_anrufen">Geokontakt anrufen</string>
+  <string name="men_navigation_starten">Navigation starten</string>
+  <string name="men_hilfe_anzeigen">Hilfe</string>
+  <string name="men_einstellungen_bearbeiten">Einstellungen</string>
+  <string name="men_position_senden">Position senden</string>
+  <string name="men_zurueck">Zurück</string>
+  <string name="men_speichern">Speichern</string>
+  <string name="men_amando_beenden">Beenden</string>
+
+  <!-- Notification -->
+  <string name="not_empfange_pos_service_aktiv">Auf Empfang!</string>
+
+  <!-- Toast Messages -->
+  <string name="ts_sim_started">Simulation gestartet</string>
+  
+</resources>
