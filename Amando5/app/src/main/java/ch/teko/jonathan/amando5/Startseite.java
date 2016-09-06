@@ -37,12 +37,10 @@ public class Startseite extends Activity {
      * @param sfNormal Schaltfläche
      */
     public void onClickGeokontakteVerwalten(final View sfNormal) {
-        Context context = getApplicationContext();
-        CharSequence text = this.getString(R.string.ts_geo_manage);
-        int duration = Toast.LENGTH_SHORT;
 
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
+        final Intent intent = new Intent(this, GeokontaktAuflisten.class);
+        startActivity(intent);
+
     }
 
 
