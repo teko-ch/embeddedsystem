@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">example_2</string>
-    <string name="lb_subject">Betreff</string>
-    <string name="lb_message">Nachricht</string>
-    <string name="lb_button">Senden</string>
-    <string name="edt_message">Test Text zum anguggen :-)</string>
-    <string name="lb_act_2_subject">Betreff</string>
-    <string name="lb_act_2_button">Mail senden</string>
-</resources>

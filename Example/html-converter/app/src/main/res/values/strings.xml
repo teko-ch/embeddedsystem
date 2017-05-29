@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">html-converter</string>
-    <string name="txt_edit_label">Insert some HTML-Code</string>
-    <string name="txt_convert">Convert</string>
-</resources>
