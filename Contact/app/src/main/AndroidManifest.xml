@@ -17,6 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".SignInActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".contact.ContactActivity"></activity>
     </application>
 
 </manifest>

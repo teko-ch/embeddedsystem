@@ -15,7 +15,7 @@
         android:layout_height="200dp"
         android:layout_marginTop="@dimen/activity_vertical_margin" />
 
-    <EditText android:id="@+id/login_fld_email"
+    <EditText android:id="@+id/register_fld_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -24,27 +24,26 @@
         android:padding="10dp"
         />
 
-    <EditText android:id="@+id/login_fld_password"
+    <EditText android:id="@+id/register_fld_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:inputType="textPassword"
+        android:layout_marginTop="20dp"
         android:hint="Password"
         android:padding="10dp"
         />
 
-    <Button android:id="@+id/login_btn_login"
+    <Button android:id="@+id/register_btn_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Sign In"
+        android:text="@string/action_register"
         android:padding="10dp"/>
 
-        <TextView android:id="@+id/signin_register"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/action_sign_in"
-        android:padding="10dp"/>
+    <!--<TextView android:id="@+id/signin_register"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/action_sign_in"-->
+    <!--android:padding="10dp"/>-->
 
 </LinearLayout>

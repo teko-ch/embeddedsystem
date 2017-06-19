@@ -7,13 +7,15 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
+
+import org.w3c.dom.Text;
 
 
 public class SignInActivity extends AppCompatActivity implements View.OnClickListener {
@@ -27,11 +29,13 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
     private EditText mEmailField;
     private EditText mPasswordField;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signin);
 
+        setTitle("Sign In");
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -41,6 +45,7 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
 
         // Set listener to Login Button
         findViewById(R.id.login_btn_login).setOnClickListener(this);
+        findViewById(R.id.signin_register).setOnClickListener(this);
 
     }
 
@@ -66,6 +71,9 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
         // Login Button
         if(v.getId() == R.id.login_btn_login){
             this.signInWithMail(mEmailField.getText().toString(), mPasswordField.getText().toString());
+        }
+        if(v.getId() == R.id.signin_register){
+            startActivity(new Intent(getBaseContext(), RegisterActivity.class));
         }
     }
 }

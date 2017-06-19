@@ -1,5 +1,6 @@
 package ch.teko.contact;
 
+import android.app.ListActivity;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -8,14 +9,30 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.ArrayList;
+
+import ch.teko.contact.contact.ContactActivity;
+
+public class MainActivity extends ListActivity {
     private String TAG = this.getClass().getSimpleName();
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
+
+    private String[] NAMEN =new String[5];
+    private ArrayAdapter<String> mContactList;
+
+    private void initName(){
+        NAMEN[0] = "Hans Muster 1";
+        NAMEN[1] = "Hans Muster 3";
+        NAMEN[2] = "Hans Muster 5";
+        NAMEN[3] = "Hans Muster 4";
+        NAMEN[4] = "Hans Muster 3";
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
             }
         };
 
+        startActivity(new Intent(getBaseContext(), ContactActivity.class));
     }
 
     @Override

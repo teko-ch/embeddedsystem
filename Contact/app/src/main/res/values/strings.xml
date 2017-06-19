@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Contact</string>
+    <string name="action_sign_in">Register</string>
+    <string name="action_register">Register</string>
 </resources>
