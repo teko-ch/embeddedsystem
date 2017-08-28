@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "860160035729",
+    "firebase_url": "https://tekocontactrest.firebaseio.com",
+    "project_id": "tekocontactrest",
+    "storage_bucket": "tekocontactrest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860160035729:android:38a028a4edb10fbb",
+        "android_client_info": {
+          "package_name": "ch.teko.contact"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "860160035729-qu3hlildb137uuk3jl2jj0r7nnc6p1ld.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ch.teko.contact",
+            "certificate_hash": "ce581f179a14f2d6ac3ebd28dffdccfb7e53907e"
+          }
+        },
+        {
+          "client_id": "860160035729-ifdube1tch676haro31qlhbtpvehhcbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCg3svhgVmRgQdlQU9FdFzeo9DAlAqP98I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "860160035729-ifdube1tch676haro31qlhbtpvehhcbm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

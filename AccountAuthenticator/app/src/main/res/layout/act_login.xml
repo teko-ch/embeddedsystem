@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="17dp"
+    android:paddingRight="17dp"
+    >
+
+    <EditText android:id="@+id/login_fld_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Email address"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        />
+
+    <EditText android:id="@+id/login_fld_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:padding="10dp"
+        />
+
+    <Button android:id="@+id/login_btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Sign In"
+        android:padding="10dp"/>
+
+    <!--    <TextView android:key="@+key/signin_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/act_sign_register"
+            android:clickable="true"
+            android:padding="10dp"/>-->
+
+</LinearLayout>
